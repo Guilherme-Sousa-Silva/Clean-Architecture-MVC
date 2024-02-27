@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "GHrephB/Nb8hYrZxSkr/Y+0qIdPBs78B7Q/UC4qx+MRF6OYaMn62AW3RCgp9ihRCZ2tnBIvXZXbObkMQXZy45Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gui_g\\source\\repos\\CleanArchMVC\\CleanArchMvc.Infra.Data\\CleanArchMvc.Infra.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}

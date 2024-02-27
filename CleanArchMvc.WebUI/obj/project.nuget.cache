@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "taQFSWgpWVLVoVhGHO4CWXxa1tuG3rhYBc0cBa0FFtV43X9UhDbj9LvwkVBZZZ0jk9VwGxMZH77O89BCUgeBqA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\gui_g\\source\\repos\\CleanArchMVC\\CleanArchMvc.WebUI\\CleanArchMvc.WebUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}
