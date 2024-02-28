@@ -2073,7 +2073,7 @@
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
+            "suppressParent": "None",
             "target": "Package",
             "version": "[6.0.0, )"
           },

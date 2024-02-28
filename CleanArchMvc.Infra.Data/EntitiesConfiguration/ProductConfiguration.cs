@@ -32,7 +32,8 @@ namespace CleanArchMvc.Infra.Data.EntitiesConfiguration
 			// mapeamento um para muitos
 			builder.HasOne(x => x.Category)
 				.WithMany(x => x.Products)
-				.HasForeignKey(x => x.Category.Id);
+				.HasForeignKey(x => x.CategoryId)
+				.OnDelete(DeleteBehavior.NoAction);
 		}
 	}
 }
