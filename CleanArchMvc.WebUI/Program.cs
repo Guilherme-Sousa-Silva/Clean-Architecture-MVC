@@ -1,7 +1,10 @@
+using CleanArchMvc.Infra.Ioc;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+ConfigureServices(builder);
 
 var app = builder.Build();
 
@@ -25,3 +28,9 @@ app.MapControllerRoute(
 	pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+void ConfigureServices(WebApplicationBuilder builder)
+{
+	//builder.Services.AddControllersWithViews();
+	builder.Services.AddInfrastructure(builder.Configuration);
+}

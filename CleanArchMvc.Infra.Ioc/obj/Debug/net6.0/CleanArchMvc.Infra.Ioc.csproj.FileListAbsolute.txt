@@ -17,3 +17,5 @@ C:\Users\gui_g\source\repos\CleanArchMVC\CleanArchMvc.Infra.Ioc\obj\Debug\net6.0
 C:\Users\gui_g\source\repos\CleanArchMVC\CleanArchMvc.Infra.Ioc\obj\Debug\net6.0\refint\CleanArchMvc.Infra.Ioc.dll
 C:\Users\gui_g\source\repos\CleanArchMVC\CleanArchMvc.Infra.Ioc\obj\Debug\net6.0\CleanArchMvc.Infra.Ioc.pdb
 C:\Users\gui_g\source\repos\CleanArchMVC\CleanArchMvc.Infra.Ioc\obj\Debug\net6.0\ref\CleanArchMvc.Infra.Ioc.dll
+C:\Users\gui_g\source\repos\CleanArchMVC\CleanArchMvc.Infra.Ioc\bin\Debug\net6.0\CleanArchMvc.Infra.Ioc.runtimeconfig.json
+C:\Users\gui_g\source\repos\CleanArchMVC\CleanArchMvc.Infra.Ioc\obj\Debug\net6.0\CleanArchMvc.Infra.Ioc.genruntimeconfig.cache
