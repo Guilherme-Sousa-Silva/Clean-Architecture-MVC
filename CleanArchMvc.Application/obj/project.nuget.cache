@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LzZ0y37m7YwXyIlkozW7j5H5FxCNlH42K/7IjwcEDQGxpo9tzG1WvznN3n2G+3Bqgrs20GLWUxgBKp7SvNHNpQ==",
+  "dgSpecHash": "0CqW0uA7EhXp2UpzwVoDDJaomj9aOWryq3yvy4CQmSv28YuOIYEowwclkFxcbZ1+PVOVYOHvwspK6Ws7oTu1yA==",
   "success": true,
   "projectFilePath": "C:\\Users\\gui_g\\source\\repos\\CleanArchMVC\\CleanArchMvc.Application\\CleanArchMvc.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gui_g\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\gui_g\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\gui_g\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
