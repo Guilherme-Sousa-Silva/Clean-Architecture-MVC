@@ -1,51 +1,66 @@
 ﻿using AutoMapper;
 using CleanArchMvc.Application.DTOs;
 using CleanArchMvc.Application.Interfaces;
+using CleanArchMvc.Application.Products.Commands;
+using CleanArchMvc.Application.Products.Handlers;
+using CleanArchMvc.Application.Products.Queries;
 using CleanArchMvc.Domain.Entities;
-using CleanArchMvc.Domain.Interfaces;
+using MediatR;
 
 namespace CleanArchMvc.Application.Services
 {
 	public class ProductService : IProductService
 	{
-		private readonly IProductRepository _productRepository;
+		private readonly IMediator _mediator;
 		private readonly IMapper _mapper;
 
-		public ProductService(IProductRepository productRepository, IMapper mapper)
+		public ProductService(IMediator mediator, IMapper mapper)
 		{
-			_productRepository = productRepository;
-			_mapper = mapper;
+            _mediator = mediator;
+            _mapper = mapper;
 		}
 
 		public async Task<IList<ProductDTO>> GetAsync()
 		{
-			var products = await _productRepository.GetAsync();
-			return _mapper.Map<IList<ProductDTO>>(products);
+			var productsQuery = new GetProductsQuery();
+			if (productsQuery == null)
+			{
+				throw new ApplicationException($"Não foi possível carregar a entidade.");
+			}
+
+			var result = await _mediator.Send(productsQuery);
+			return _mapper.Map<IList<ProductDTO>>(result);
 		}
 
 		public async Task<ProductDTO> GetByIdAsync(int id)
 		{
-			var product = await _productRepository.GetByIdAsync(id);
-			return _mapper.Map<ProductDTO>(product);
+            var product = new GetProductByIdQuery(id);
+            if (product == null)
+            {
+                throw new ApplicationException($"Não foi possível carregar a entidade.");
+            }
+			var result = _mediator.Send(product);
+			return _mapper.Map<ProductDTO>(result);
 		}
 
 		public async Task<ProductDTO> CreateAsync(ProductDTO productDTO)
 		{
-			var product = _mapper.Map<Product>(productDTO);
-			var createdProduct = await _productRepository.CreateAsync(product);
+            var productCommand = _mapper.Map<ProductCreatCommand>(productDTO);
+			var createdProduct = await _mediator.Send(productCommand);
 			return _mapper.Map<ProductDTO>(createdProduct);
 		}
 
 		public async Task<ProductDTO> UpdateAsync(ProductDTO productDTO)
 		{
-			var product = _mapper.Map<Product>(productDTO);
-			var updatedProduct = await _productRepository.UpdateAsync(product);
-			return _mapper.Map<ProductDTO>(updatedProduct);
+            var productCommand = _mapper.Map<ProductUpdateCommand>(productDTO);
+            var updatedProduct = await _mediator.Send(productCommand);
+            return _mapper.Map<ProductDTO>(updatedProduct);
 		}
 
 		public async Task DeleteAsync(int id)
 		{
-			await _productRepository.DeleteAsync(id);
+			var productCommand = new ProductRemoveCommand(id);
+			await _mediator.Send(productCommand);
 		}
 	}
 }

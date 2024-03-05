@@ -5,7 +5,7 @@ namespace CleanArchMvc.Application.DTOs
 {
 	public class ProductDTO
 	{
-		public int id {  get; set; }
+		public int Id {  get; set; }
 
 		[Required(ErrorMessage = "O nome é obrigatório!")]
 		[MinLength(3)]
