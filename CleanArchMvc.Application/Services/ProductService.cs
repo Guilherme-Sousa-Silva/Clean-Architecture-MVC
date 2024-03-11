@@ -2,9 +2,7 @@
 using CleanArchMvc.Application.DTOs;
 using CleanArchMvc.Application.Interfaces;
 using CleanArchMvc.Application.Products.Commands;
-using CleanArchMvc.Application.Products.Handlers;
 using CleanArchMvc.Application.Products.Queries;
-using CleanArchMvc.Domain.Entities;
 using MediatR;
 
 namespace CleanArchMvc.Application.Services
@@ -39,7 +37,7 @@ namespace CleanArchMvc.Application.Services
             {
                 throw new ApplicationException($"Não foi possível carregar a entidade.");
             }
-			var result = _mediator.Send(product);
+			var result = await _mediator.Send(product);
 			return _mapper.Map<ProductDTO>(result);
 		}
 

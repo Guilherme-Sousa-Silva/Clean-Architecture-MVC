@@ -1,0 +1,40 @@
+﻿@model CleanArchMvc.Application.DTOs.ProductDTO
+
+@{
+    ViewData["Title"] = "Excluir produto";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h4>Você tem certeza que deseja excluir esse produto?</h4>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dt class="col-sm">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+                <dt class="col-sm">
+            @Html.DisplayNameFor(model => model.Stock)
+        </dt>
+    </dl>
+    <dl class="row">
+        <dd class="col-sm">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+                <dd class="col-sm">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+                <dd class="col-sm">
+            @Html.DisplayFor(model => model.Stock)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn btn-secondary">Back to List</a>
+    </form>
+</div>

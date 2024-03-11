@@ -23,7 +23,7 @@ namespace CleanArchMvc.Application.Products.Handlers
             }
             else
             {
-                await _productRepository.DeleteAsync(request.Id);
+                await _productRepository.DeleteAsync(productToRemove);
                 return productToRemove;
             }
         }

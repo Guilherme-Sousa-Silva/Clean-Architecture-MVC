@@ -44,9 +44,12 @@ namespace CleanArchMvc.Application.Services
 			return _mapper.Map<CategoryDTO>(updatedCategory);
 		}
 
-		public async Task DeleteAsync(int id)
+		public async Task<CategoryDTO> DeleteAsync(int id)
 		{
+			var categoryToDelete = await GetByIdAsync(id);
 			await _categoryRepository.DeleteAsync(id);
-		}
+
+			return categoryToDelete;
+        }
 	}
 }

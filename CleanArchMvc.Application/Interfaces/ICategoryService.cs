@@ -8,6 +8,6 @@ namespace CleanArchMvc.Application.Interfaces
 		Task<CategoryDTO> GetByIdAsync(int id);
 		Task<CategoryDTO> CreateAsync(CategoryDTO categoryDTO);
 		Task<CategoryDTO> UpdateAsync(CategoryDTO categoryDTO);
-		Task DeleteAsync(int id);
+		Task<CategoryDTO> DeleteAsync(int id);
 	}
 }
